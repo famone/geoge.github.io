@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>George app</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1>
+        Вас кто-то очень заебал?
+        
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <button onClick="playsound()">ЖМИ НА КНОПКУ</button>
+      <audio id="sound1">     
+        <source src="img/voice.mp3">
+      </audio>
+    </div>
+  </div>
+  
+</div>
+
+<div class="author text-center">
+    <p>developed by famo.</p>
+  </div>
+
+
+
+	
+<!--СКРИПТЫ-->	
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+
+<script>
+  var sillysound = document.getElementById('sound1');
+
+function playsound(){
+   sillysound.play(); 
+}
+</script>
+
+
+</body> 
+</html>	
+
